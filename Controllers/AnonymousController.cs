@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,10 +12,13 @@ namespace PracticeCheckCloud.Controllers
     [ApiController]
     public class AnonymousController : ControllerBase
     {
-        public static List<MenuItem> _menuList = new List<MenuItem>()
-            {
-            new MenuItem()
-            {
+        List<MenuItem> _menuList;
+        public AnonymousController()
+        {
+             _menuList = new List<MenuItem>()
+            { 
+                 new MenuItem()
+            { 
                 Menucode=1,ItemName="Sandwich",Price=99,active=true,date_of_launch=DateTime.Parse("15-03-2017 00:00:00"),CategoryId=2,freeDelivery=true
             },
             new MenuItem()
@@ -24,12 +28,18 @@ namespace PracticeCheckCloud.Controllers
 
             };
 
-        public static List<Categories> _categoryList = new List<Categories>()
+        }
+       
+    
+    
+        
+
+       /* public static List<Categories> _categoryList = new List<Categories>()
             {
             new Categories(){CategoryId=1,CategoryName="Starter"},
             new Categories(){CategoryId=2,CategoryName="MainCourse"}
 
-           };
+           };*/
         // GET: api/Anonymous
         [HttpGet]
         public ActionResult<IEnumerable<MenuItem>> GetMenuItems()
