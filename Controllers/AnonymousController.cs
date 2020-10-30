@@ -34,7 +34,7 @@ namespace PracticeCheckCloud.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<MenuItem>> GetMenuItems()
         {
-            return _menuList;
+            return _menuList.ToList();
         }
 
     }
