@@ -24,3 +24,4 @@ D:\.NET\PracticeCheckCloud\obj\Debug\netcoreapp3.1\PracticeCheckCloud.MvcApplica
 D:\.NET\PracticeCheckCloud\obj\Debug\netcoreapp3.1\PracticeCheckCloud.dll
 D:\.NET\PracticeCheckCloud\obj\Debug\netcoreapp3.1\PracticeCheckCloud.pdb
 D:\.NET\PracticeCheckCloud\obj\Debug\netcoreapp3.1\PracticeCheckCloud.genruntimeconfig.cache
+D:\.NET\PracticeCheckCloud\bin\Debug\netcoreapp3.1\PCSampleConfig.yaml
